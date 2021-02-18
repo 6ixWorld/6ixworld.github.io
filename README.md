@@ -1,1 +1,0 @@
-# 6ixworld.github.io
