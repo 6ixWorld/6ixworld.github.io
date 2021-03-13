@@ -1,0 +1,117 @@
+.div05 {
+	width: 300px;
+	height:300px;
+	margin:auto;
+	margin-bottom: 70px;
+}
+.div05 img {
+	width:300px;
+	height:auto;
+	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0,0, 0.20);
+}
+.appoftheweek {
+	text-align: center;
+}
+.div45 {
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	color: black;
+}
+.div451 {
+	width: 400px;
+	height:200px;
+	background-image: radial-gradient(circle, green, black);
+	margin: auto;
+	margin-top: 20px;
+	}
+.span23 {
+	color: red;
+}
+.div576 {
+	width:400px;
+	height:auto;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0,0, 0.20);
+	margin: auto;
+	margin-top: 20px;
+}
+.div576 img {
+	width:300px;
+	height:auto;
+	margin: auto;
+}
+.container {
+	display:flex;
+	padding: 10px;
+	width: 100%;
+	height:auto;
+}
+.container div {
+	width: 250px;
+	height:auto;
+	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0,0, 0.20);
+	margin: auto;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+.container a {
+	text-decoration: none;
+	color: black;
+}
+.container div:hover {
+	box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0,0, 0.20);
+}
+.container img {
+	width: 250px ;
+	height: auto;
+	margin-left: 10px;
+	margin: auto;
+}
+.containerdesc {
+	 padding: 2px 16px;
+}
+@media screen and (min-width:0px) and (max-width: 500px) {
+		.container img, .container div {
+	width: 140px ;
+	height: auto;
+	}
+}
+@media screen and (min-width:501px) and (max-width: 540px) {
+		.container img, .container div {
+	width: 180px ;
+	height: auto;
+	}
+}
+@media screen and (min-width:541px) and (max-width: 600px) {
+		.container img, .container div {
+	width: 200px ;
+	height: auto;
+	}
+}
+@media screen and (min-width:600px) and (max-width: 720px) {
+		.container img, .container div {
+	width: 230px ;
+	height: auto;
+	}
+}
+@media screen and (min-width:721px) and (max-width: 950px) {
+		.container img, .container div {
+	width: 150px ;
+	height: auto;
+	}
+}
+
+@media screen and (min-width:951px) and (max-width: 1050px) {
+		.container img, .container div {
+	width: 200px ;
+	height: auto;
+	}
+}
+						
+@media screen and (max-width:1200 px) {
+		.container img, .container div {
+	width: 150px ;
+	height: auto;
+	}
+}
+			
