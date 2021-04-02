@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title> 6IX WORLd </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="CSS/style1.css" />
+		<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+		<link rel="icon" href="favicon.png">
+		<script>
+			function toggle_light_mode() {
+				var app = document.getElementsByTagName("BODY")[0];
+				if (localStorage.lightMode == "light") {
+					localStorage.lightMode = "dark";
+					app.setAttribute("data-light-mode", "dark");
+				} else {
+					localStorage.lightMode = "light";
+					app.setAttribute("data-light-mode", "light");
+				}		
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			var app = document.getElementsByTagName("BODY")[0];
+			if (localStorage.lightMode == "dark") {
+				app.setAttribute("data-light-mode", "dark");
+			}
+		</script>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)"
+				class="closebtn"
+				onclick="closeNav()">&times;
+			</a>
+			<a href="#"><i class="fas fa-home" style=" padding: 3px; display: inline;"></i>Home</i></a>
+			<a href="#"><i class="fab fa-android" style=" padding: 3px; display: inline;"></i>Apps</a>
+			<a href="#"><i class="fas fa-gamepad" style=" padding: 3px; display: inline;"></i>Games</a>
+			<a href="#"><i class="fas fa-pen" style=" padding: 3px; display: inline;"></i>Blog</a>
+		</div>
+		<div id="nav-container">
+			<div class="menu">
+				<span style="font-size:30px; cursor:pointer;" onclick="openNav()"><i class="fas fa-bars"></i>
+				</span>
+			</div>
+			<span class="logo-container">
+				<span style="font-size: 30px;"><b> 6ix </b></span><span style="font-size: 35px;">  World</span>
+			</span>
+			<div class="dark-mode-container">
+				<span onclick="toggle_light_mode()"> <i class="fas fa-adjust" style=" font-size: 30px; color: white; padding-top: 10px;"></i> </span>
+			</div>
+		</div>
+		<script>
+			var prevScrollpos = window.pageYOffset;
+			window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+			document.getElementById("nav-container").style.top = "0";
+			} else {
+			document.getElementById("nav-container").style.top = "-50px";
+			}
+			prevScrollpos = currentScrollPos;
+			}
+		</script>
+		<script>
+		
+			/* Set the width of the side navigation to
+			250px */ 
+			
+			function openNav() {
+			document.getElementById("mySidenav")
+			.style.width="250px";
+			}
+			
+			function closeNav() {
+			document.getElementById("mySidenav")
+			.style.width = "0";
+			}
+		</script>
+		<br>
+		<br>
+		<br>
+		<br>
+			<h4 class="category">PHOTOGRAPHY <span><i>see more<i class="fas fa-arrow-circle-right" style="padding-left: 10px;"></i></i></i></span></h4>
+		<hr>
+		<div class="rrr">
+			<div class="div-apps-flex-container">
+				<div>
+					<img src="images/canva.webp" class="app-icon"  alt="Canva">
+					<div class="app-description"> <h3>Canva</h3></div>
+				</div>
+				<div>
+					<img src="images/inshot.webp" class="app-icon"  alt="inshot">
+					<span class="app-description"> <h3>Inshot</h3></span>
+				</div>
+				<div>
+					<img src="images/photoshop.webp" class="app-icon"  alt="photoshop">
+					<span class="app-description"> <h3>Photoshop</h3></span>
+				</div>
+				<div>
+					<img src="images/beauty-cam.webp" class="app-icon"  alt="Beauty Cam">
+					<span class="app-description"> <h3>	Beauty Cam</h3></span>
+				</div>
+				<div>
+					<img src="images/picsart.webp" class="app-icon"  alt="Picsart">
+					<span class="app-description"> <h3>PicsArt</h3></span>
+				</div>
+				<div>
+					<img src="images/sweet-selfie.webp" class="app-icon"  alt="Sweet selfie">
+					<span class="app-description"> <h3>Sweet Selfie</h3></span>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div style="margin-top: 50px;">
+			<h3 style="text-align: center; padding-top: 20px;"><u><b> App Of The Week </b></u></h3>
+			<div class="slideshow-container" data-cycle="2000" style="width: 100%;">
+				<div class="mySlides fade" style="width: 100%;">
+					<div class="numbertext">1 / 3</div>
+					<img src="images/lightroom.jpg" alt="Lightroom">
+					<div class="text">Adobe Lightroom</div>
+				</div>
+				<div class="mySlides fade" style="width: 100%;">
+					<div class="numbertext">2 / 3</div>
+					<img src="images/Netflix.jpg" alt="Netflix">
+					<div class="text">Netflix</div>
+				</div>
+				<div class="mySlides fade" style="width: 100%;">
+					<div class="numbertext">3 / 3</div>
+					<img src="images/Subway-Surfers.jpg" alt="Subway Surfers">
+					<div class="text">Subway Surfers</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<h4 class="category">TOP GAMES <span><i>see more<i class="fas fa-arrow-circle-right" style="padding-left: 10px;"></i></i></i></span></h4>
+		<hr>
+		<div class="rrr">
+			<div class="div-apps-flex-container">
+				<div>
+					<img src="images/Subway-Surfers.webp" class="app-icon"  alt="Subway Surfers">
+					<span class="app-description"> <h3>Subway Surfers</h3></span>
+				</div>
+				<div>
+					<img src="images/Temple-Run-2.webp" class="app-icon"  alt="Temple Run 2">
+					<span class="app-description"> <h3>Temple Run 2</h3></span>
+				</div>
+				<div>
+					<img src="images/Magic-Tile-3.webp" class="app-icon"  alt="Magic Tile 3">
+					<span class="app-description"> <h3>Magic Tile 3</h3></span>
+				</div>
+				<div>
+					<img src="images/Minecraft.webp" class="app-icon"  alt="Minecraft">
+					<span class="app-description"> <h3>Minecraft</h3></span>
+				</div>
+				<div>
+					<img src="images/Sonic-Dash.webp" class="app-icon"  alt="Sonic Dash">
+					<span class="app-description"> <h3>Sonic Dash</h3></span>
+				</div>
+				<div>
+					<img src="images/Traffic-Racer.webp" class="app-icon"  alt="Traffic Racer">
+					<span class="app-description"> <h3>Traffic Racer</h3></span>
+				</div>
+			</div>
+		</div>
+		<br>
+		<hr>
+		<h4 class="category">SOCIAL <span><i>see more<i class="fas fa-arrow-circle-right" style="padding-left: 10px;"></i></i></i></span></h4>
+		<hr>
+		<div class="rrr">
+			<div class="div-apps-flex-container">
+				<div>
+					<img src="images/BGram.webp" class="app-icon"  alt="BGram">
+					<span class="app-description"> <h3>BGram</h3></span>
+				</div>
+				<div>
+					<img src="images/Gb-plus-whatsapp-apk.jpg" class="app-icon"  alt="GB WhatsApp">
+					<span class="app-description"> <h3>GB WhatsApp</h3></span>
+				</div>
+				<div>
+					<img src="images/Snap-chat.webp" class="app-icon"  alt="Snap chat">
+					<span class="app-description"> <h3>Snap Chat</h3></span>
+				</div>
+				<div>
+					<img src="images/Spotify.webp" class="app-icon"  alt="Spotify">
+					<span class="app-description"> <h3>Spotify</h3></span>
+				</div>
+				<div>
+					<img src="images/Audiomack.webp" class="app-icon"  alt="Audiomack">
+					<span class="app-description"> <h3>Audiomack</h3></span>
+				</div>
+				<div>
+					<img src="images/GBinsta.png" class="app-icon"  alt="GBinsta">
+					<span class="app-description"> <h3>GBinsta</h3></span>
+				</div>
+			</div>
+		</div>
+		<br>
+		<script>
+			/* Find all slideshow containers */
+			var slideshowContainers = document.getElementsByClassName("slideshow-container");
+			/* For each container get starting variables */
+			for(let s = 0; s < slideshowContainers.length; s++) {
+			/* Read the new data attribute */        
+			var cycle = slideshowContainers[s].dataset.cycle;
+			/* Find all the child nodes with class mySlides */
+			var slides = slideshowContainers[s].querySelectorAll('.mySlides');
+			var slideIndex = 0;
+			/* Now we can cycle slides, but this recursive function must have parameters */
+			/* slides and cycle never change, those are unique for each slide container */
+			/* slideIndex will increase during each iteration */
+			showSlides(slides, slideIndex, cycle);
+			};
+
+			/* Function is alsmost same, but now it uses 3 new parameters */
+			function showSlides(slides, slideIndex, cycle) {
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+			};
+			slideIndex++;
+			if (slideIndex > slides.length) {
+			slideIndex = 1
+			};
+			slides[slideIndex - 1].style.display = "block";
+			/* Calling same function, but with new parameters and cycle time */
+			setTimeout(function() {
+			showSlides(slides, slideIndex, cycle)
+			}, cycle);
+			};	
+		</script>
+		<div class="apps-container">
+			<h3> NON STOP ACTION </h3>
+			<hr>
+			<div class="apps">
+				<div>
+					<img src="images/Hunter-Assassin.jpg" alt="Hunter Assassin">
+					<p> <b>Hunter Assassin</b><p>
+					<p> lorem ipsum dolor silt </p>
+					<p> Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit,</p>
+				</div>
+			</div>
+			<hr>
+			<div class="apps">
+				<div>
+					<img src="images/Sonic-2-Darsh.jpg" alt="Sonic 2 Darsh">
+					<p> <b>Sonic 2 Darsh</b><p>
+					<p> lorem ipsum dolor silt </p>
+					<p> Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit,</p>
+				</div>
+			</div>
+			<hr>
+			<div class="apps">
+				<div>
+					<img src="images/Angry Birds Dream Blast.jpg" alt="Angry Birds Dream Blast">
+					<p> <b>Angry Birds Dream Blast</b><p>
+					<p> lorem ipsum dolor silt </p>
+					<p> Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit,</p>
+				</div>
+			</div>
+			<br>
+		</div>
+		
+		
+		<div class="hot-app">
+		<br>
+			<div class="hot-app-img">
+				<img src="images/asphalt-8.jpg">
+			</div>
+			<div class="hot-app-description">
+				<h1> Asphalt 8 Racing Game - Drive, Drift at Real Speed</h1>
+				<h3>LEAVE GRAVITY IN THE DUST </h3>
+				<p>
+					The best Android arcade racing game series reaches a new turning point! Perform dynamic, high-speed aerial stunts in an intense driving experience powered by a brand-new physics engine!
+				</p>
+				<br>
+			</div>
+		</div>
+		
+	<br>
+	<BR>
+	<div class="div-app-square-container">
+	
+	<h1> FOR YOU</h1>
+	
+		<div class="div-app-square">
+			<div class="div-app-square-div-1">
+				<img src="images/Idle Supermarket Tycoon.jpg" alt="Idle Supermarket Tycoon">
+				<h3>Idle Supermarket Tycoon</h3>
+			</div>
+			<div class="div-app-square-div-2">
+				<img src="images/Blob Runner 3D.jpg" alt="Blob Runner 3D">
+				<h3>Blob Runner 3D</h3>
+			</div>
+		</div>
+		<div class="div-app-square">
+			<div class="div-app-square-div-1">
+				<img src="images/Bullet Echo.jpg" alt="Bullet Echo">
+				<h3>Bullet Echo</h3>
+			</div>
+			<div class="div-app-square-div-2">
+				<img src="images/Flight Pilot Simulator 3D.jpg" alt="Flight Pilot Simulator 3D">
+				<h3> Flight Pilot Simulator 3D</h3>
+			</div>
+		</div>
+		<div class="div-app-square">
+			<div class="div-app-square-div-1">
+				<img src="images/Mini Football.jpg" alt="Mini Football">
+				<h3>Mini Football</h3>
+			</div>
+			<div class="div-app-square-div-2">
+				<img src="images/Shadow Fight.jpg" alt="Shadow Fight">
+				<h3>Shadow Fight</h3>
+			</div>
+		</div>
+		<br>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h4 class="category">SPORT <span><i>see more<i class="fas fa-arrow-circle-right" style="padding-left: 10px;"></i></i></i></span></h4>
+		<hr>
+		<div class="rrr">
+		<div class="div-apps-flex-container">
+		<div>
+			<img src="images/Logo_of_Dream11.PNG" class="app-icon"  alt="Logo_of_Dream11">
+			<span class="app-description"> <h3>Dream11 Premium (Cracked)</h3></span>
+		</div>
+		<div>
+			<img src="images/NCAA-Football-Stream-Premium.webp" class="app-icon"  alt="NCAA Football Stream Premium (Ads Free)">
+			<span class="app-description"> <h3>NCAA Football Stream Premium (Ads Free)</h3></span>
+		</div>
+		<div>
+			<img src="images/FotMob-Pro.webp" class="app-icon"  alt="FotMob Premium (Cracked) ">
+			<span class="app-description"> <h3>FotMob Premium (Cracked) </h3></span>
+		</div>
+		<div>
+			<img src="images/Strelok.png" class="app-icon"  alt="Strelok+ Premium (Ads Free) ">
+			<span class="app-description"> <h3>Strelok+ Premium (Ads Free) </h3></span>
+		</div>
+		<div>
+			<img src="images/BetControl-Basketball-Tips-Premium.webp" class="app-icon"  alt="BetControl Basketball Tips Premium ">
+			<span class="app-description"> <h3>BetControl Basketball Tips Premium </h3></span>
+		</div>
+		<div>
+			<img src="images/Eurosport.png" class="app-icon"  alt="Eurosport MOD (Cracked)">
+			<span class="app-description"> <h3>Eurosport MOD (Cracked)</h3></span>
+		</div>
+		</div>
+		</div>
+		<br>
+		<hr>
+				<h4 class="category">JUST UPDATED <span><i>see more<i class="fas fa-arrow-circle-right" style="padding-left: 10px;"></i></i></i></span></h4>
+		<hr>
+		<div class="rrr">
+		<div class="div-apps-flex-container">
+		<div>
+			<img src="images/The King Of fighters  ALLSTAR.jpg" class="app-icon"  alt="The King Of fighters  ALLSTAR">
+			<span class="app-description"> <h3>The King Of fighters  ALLSTAR</h3></span>
+		</div>
+		<div>
+			<img src="images/Tiles Hop EDM Rush.jpg" class="app-icon"  alt="Tiles Hop EDM Rush">
+			<span class="app-description"> <h3>Tiles Hop EDM Rush</h3></span>
+		</div>
+		<div>
+			<img src="images/Puzzle Heist.jpg" class="app-icon"  alt="Puzzle Heist">
+			<span class="app-description"> <h3>Puzzle Heist</h3></span>
+		</div>
+		<div>
+			<img src="images/Romance Club.jpg" class="app-icon"  alt="Romance Club">
+			<span class="app-description"> <h3>Romance Club</h3></span>
+		</div>
+		<div>
+			<img src="images/Tanks A Lot.jpg" class="app-icon"  alt="Tanks A Lot">
+			<span class="app-description"> <h3>Tanks A Lot</h3></span>
+		</div>
+		<div>
+			<img src="images/Water-Sort-Puzzle.jpg" class="app-icon"  alt="Water Sort Puzzle">
+			<span class="app-description"> <h3>Water Sort Puzzle</h3></span>
+		</div>
+		</div>
+		</div>
+		<br>
+		
+		<div class="hot-app">
+		<br>
+			<div class="hot-app-img">
+				<img src="images/asphalt-8.jpg">
+			</div>
+			<div class="hot-app-description">
+				<h1> Asphalt 8 Racing Game - Drive, Drift at Real Speed</h1>
+				<h3>LEAVE GRAVITY IN THE DUST </h3>
+				<p>
+					The best Android arcade racing game series reaches a new turning point! Perform dynamic, high-speed aerial stunts in an intense driving experience powered by a brand-new physics engine!
+				</p>
+			</div>
+		</div>
+		<hr>
+		<h4 class="category">ACTION <span><i>see more<i class="fas fa-arrow-circle-right" style="padding-left: 10px;"></i></i></i></span></h4>
+		<hr>
+		<div class="rrr">
+		<div class="div-apps-flex-container">
+		<div>
+			<img src="images/Sniper Strike MOD (Unlimited Money).PNG" class="app-icon"  alt="Sniper Strike MOD (Unlimited Money)">
+			<span class="app-description"> <h3>Sniper Strike MOD (Unlimited Money)</h3></span>
+		</div>
+		<div>
+			<img src="images/blades-of-brim-game-icon.PNG" class="app-icon"  alt="Blades of Brim MOD (Unlimited Money)">
+			<span class="app-description"> <h3>Blades of Brim MOD (Unlimited Money)</h3></span>
+		</div>
+		<div>
+			<img src="images/inshot.jpg" class="app-icon"  alt="inshot">
+			<span class="app-description"> <h3>Inshot</h3></span>
+		</div>
+		<div>
+			<img src="images/inshot.jpg" class="app-icon"  alt="inshot">
+			<span class="app-description"> <h3>Inshot</h3></span>
+		</div>
+		<div>
+			<img src="images/inshot.jpg" class="app-icon"  alt="inshot">
+			<span class="app-description"> <h3>Inshot</h3></span>
+		</div>
+		<div>
+			<img src="images/inshot.jpg" class="app-icon"  alt="inshot">
+			<span class="app-description"> <h3>Inshot</h3></span>
+		</div>
+		</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<div style="margin-top: 50px;">
+		<h3 style="text-align: center; padding-top: 20px;"><u><b> Just in </b></u></h3>
+		<div class="slideshow-container" data-cycle="2000" style="width: 100%;">
+		<div class="mySlides fade" style="width: 100%;">
+		<div class="numbertext">1 / 3</div>
+		<img src="images/lightroom.jpg" alt="Lightroom">
+		<div class="text">Adobe Lightroom</div>
+		</div>
+		
+		<div class="mySlides fade" style="width: 100%;">
+		<div class="numbertext">2 / 3</div>
+		<img src="images/Netflix.jpg" alt="Netflix">
+		<div class="text">Netflix</div>
+		</div>
+		
+		<div class="mySlides fade" style="width: 100%;">
+		<div class="numbertext">3 / 3</div>
+		<img src="images/Subway-Surfers.jpg" alt="Subway Surfers">
+		<div class="text">Subway Surfers</div>
+		</div>
+		
+		</div>
+		</div>
+		<script>
+		/* Find all slideshow containers */
+		var slideshowContainers = document.getElementsByClassName("slideshow-container");
+		/* For each container get starting variables */
+		for(let s = 0; s < slideshowContainers.length; s++) {
+		/* Read the new data attribute */        
+		var cycle = slideshowContainers[s].dataset.cycle;
+		/* Find all the child nodes with class mySlides */
+		var slides = slideshowContainers[s].querySelectorAll('.mySlides');
+		var slideIndex = 0;
+		/* Now we can cycle slides, but this recursive function must have parameters */
+		/* slides and cycle never change, those are unique for each slide container */
+		/* slideIndex will increase during each iteration */
+		showSlides(slides, slideIndex, cycle);
+		};
+		
+		/* Function is alsmost same, but now it uses 3 new parameters */
+		function showSlides(slides, slideIndex, cycle) {
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+		};
+		slideIndex++;
+		if (slideIndex > slides.length) {
+		slideIndex = 1
+		};
+		slides[slideIndex - 1].style.display = "block";
+		/* Calling same function, but with new parameters and cycle time */
+		setTimeout(function() {
+		showSlides(slides, slideIndex, cycle)
+		}, cycle);
+		};	
+		</script>
+		<br>
+		<br>
+		<br>
+		<div class="div-app-square-container">
+	
+	<h1> FOR YOU</h1>
+	
+		<div class="div-app-square">
+			<div class="div-app-square-div-1">
+				<img src="images/Idle Supermarket Tycoon.jpg" alt="Idle Supermarket Tycoon">
+				<h3>Idle Supermarket Tycoon</h3>
+			</div>
+			<div class="div-app-square-div-2">
+				<img src="images/Blob Runner 3D.jpg" alt="Blob Runner 3D">
+				<h3>Blob Runner 3D</h3>
+			</div>
+		</div>
+		<div class="div-app-square">
+			<div class="div-app-square-div-1">
+				<img src="images/Bullet Echo.jpg" alt="Bullet Echo">
+				<h3>Bullet Echo</h3>
+			</div>
+			<div class="div-app-square-div-2">
+				<img src="images/Flight Pilot Simulator 3D.jpg" alt="Flight Pilot Simulator 3D">
+				<h3> Flight Pilot Simulator 3D</h3>
+			</div>
+		</div>
+		<div class="div-app-square">
+			<div class="div-app-square-div-1">
+				<img src="images/Mini Football.jpg" alt="Mini Football">
+				<h3>Mini Football</h3>
+			</div>
+			<div class="div-app-square-div-2">
+				<img src="images/Shadow Fight.jpg" alt="Shadow Fight">
+				<h3>Shadow Fight</h3>
+			</div>
+		</div>
+		<br>
+		</div>
+		<br>
+		<br>
+			<div class="apps-container">
+		<h3> NON STOP ACTION </h3>
+			<hr>
+			<div class="apps">
+				<div>
+					<img src="images/.jpg" alt="inshot">
+						<p> <b>Inshot</b><p>
+						<p> lorem ipsum dolor silt </p>
+						<p> Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit,</p>
+				</div>
+			</div>
+			<hr>
+			<div class="apps">
+				<div>
+					<img src="images/inshot.jpg" alt="inshot">
+						<p> <b>Inshot</b><p>
+						<p> lorem ipsum dolor silt </p>
+						<p> Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit,</p>
+				</div>
+			</div>
+			<hr>
+			<div class="apps">
+				<div>
+					<img src="images/inshot.jpg" alt="inshot">
+						<p> <b>Inshot</b><p>
+						<p> lorem ipsum dolor silt </p>
+						<p> Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit,</p>
+				</div>
+			</div>
+			<br>
+		</div>
+		<h4 class="category">PHOTOGRAPHY <span><i>see more<i class="fas fa-arrow-circle-right" style="padding-left: 10px;"></i></i></i></span></h4>
+		<hr>
+		<div class="rrr">
+		<div class="div-apps-flex-container">
+		<div>
+			<img src="images/inshot.jpg" class="app-icon"  alt="inshot">
+			<span class="app-description"> <h3>Inshot</h3></span>
+		</div>
+		<div>
+			<img src="images/inshot.jpg" class="app-icon"  alt="inshot">
+			<span class="app-description"> <h3>Inshot</h3></span>
+		</div>
+		<div>
+			<img src="images/inshot.jpg" class="app-icon"  alt="inshot">
+			<span class="app-description"> <h3>Inshot</h3></span>
+		</div>
+		<div>
+			<img src="images/inshot.jpg" class="app-icon"  alt="inshot">
+			<span class="app-description"> <h3>Inshot</h3></span>
+		</div>
+		<div>
+			<img src="images/inshot.jpg" class="app-icon"  alt="inshot">
+			<span class="app-description"> <h3>Inshot</h3></span>
+		</div>
+		<div>
+			<img src="images/inshot.jpg" class="app-icon"  alt="inshot">
+			<span class="app-description"> <h3>Inshot</h3></span>
+		</div>
+		</div>
+		</div>
+		<br>
+		<hr>
+		</script>
+		<footer class="footer">
+		<div class="footer-body">
+			<div> 6ix World </div>
+				<div>
+					<p> lorem ipsum dolor sit amet, consectetur adipiscing elit.duis interdum dignissim nisl posuere efficitur </p>
+					<ul>
+						<li><a href="#"> About </a></li>
+						<li><a href="#"> Contact </a></li>
+						<li><a href="#"> Terms & Conditions </a></li>
+						<li><a href="#"> Privacy Policy </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				© 6ix World 2021
+			</div>
+		</footer>
+	</body>
